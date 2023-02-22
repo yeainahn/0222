@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02test389.html</title>
+    <script>
+       var info= [ 45, 11, 7, 32, 20, 19];    //for반복문으로 출력
+       for(var k=0; k<info.length; k++){
+        document.write(info[k], ' ');
+       }
+       document.write('<br>쇼트처리 데이터출력');
+       info.sort(function(a,b){ return a-b;});
+       document.write(info.toString(),'<br>');
+       var data = info.sort();
+       document.write(data, '<br> ');
+       document.write(data, ' ');
+       document.write(data, ' ');
+
+
+    </script>
+</head>
+<body>
+     <h1>02test389.html</h1>
+</body>
+</html>

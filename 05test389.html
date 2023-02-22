@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05test389.html</title>
+    <script>
+       var city = [ '포항', '대전'];    //for반복문으로 출력
+        city.forEach(function(value, index){
+            document.write(index, '번째', value);
+            });
+
+        document.write('<p>');
+
+            city.push('구로');
+            city.forEach(function(value, index){
+            document.write(index, '번째', value);
+            });
+
+        document.write('<p>');
+
+            
+            city.shift();
+            city.forEach(function(value, index){
+            document.write(index, '번째', value);
+            });
+
+        document.write('<p>');
+
+            city.pop();
+            city.forEach(function(value, index){
+            document.write(index, '번째', value);
+            });
+
+        document.write('<p>');
+
+
+            
+    </script>
+</head>
+<body>
+
+
+
+     <h1>05test389.html</h1>
+</body>
+</html>

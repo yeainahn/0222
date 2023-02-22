@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03test391.html</title>
+    <script>
+       var city = [ '서울', '대구', '경주', '제주', '포항', '대전'];    //for반복문으로 출력
+       for(var k=0; k<city.length; k++){
+        document.write(city[k], ' ');
+       }
+
+       document.write('<p>');         //for~ in문
+        for(var i in city ){          //배열순서 0 1 2 3
+            document.write(city[i], ' ');
+        }
+
+        document.write('<p>');             //for ~ of 문
+        for(var j of city ){
+            document.write(j, ' ');
+        }
+
+    </script>
+</head>
+<body>
+     <h1>03test391.html</h1>
+</body>
+</html>

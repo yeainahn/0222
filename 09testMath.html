@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09testMath.html</title>
+    <style>*{font-size: 23pt;}</style>
+    <script>
+        // document.write(' 수학함수 random() 결과 ', Math.random(), '<p>');
+        var lotto= new Array();
+        for (var a=0; a<9; a=a+1){
+            lotto[a]=Math.floor(Math.random()*45+1);
+            for(var j =0; j<a; j=j+1){
+                if(lotto[a]==lotto[j]){a--; continue;}
+            }
+        }
+       
+
+        lotto.sort(function(a,b){ return a-b;});
+        for (var k=0; k<6; k++){
+            document.write(lotto[k],' ');
+        }
+
+
+
+       
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
